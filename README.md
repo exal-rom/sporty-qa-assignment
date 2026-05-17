@@ -1,4 +1,3 @@
-
 # QA Assignment — Single Bet Placement
 
 ## Overview
@@ -7,12 +6,12 @@ This repository contains QA deliverables for a sports betting application, focus
 ## Contents
 - Test Plan (`test_plan.md`)
 - Execution Results & Bug Reports (`execution_and_bugs.md`)
-- Automation Strategy and Technical Decisions
+- Automation Strategy and Technical Decisions  
 
 ## Execution Summary
 Execution was partially blocked due to an authentication issue (`invalid_user_id`) that prevented access to core system functionality.
 
-Despite this, investigation identified:
+Despite this, the investigation identified:
 - A critical system-level defect affecting user access
 - Gaps between specification and implementation
 - Weak error handling in the UI
