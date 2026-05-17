@@ -28,4 +28,8 @@ The testing approach focused on:
 - System behavior under failure conditions
 
 ## Notes
-AI tools were used to assist with documentation clarity and structure, without replacing reasoning, decision-making, or hands-on validation.
+AI tools were used as a supporting aid to improve clarity and structure, without replacing reasoning, decision-making, hands-on experience, or empirical validation.
+
+## Status
+Submission complete. Further execution pending resolution of authentication issue.
+
