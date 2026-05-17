@@ -1,22 +1,73 @@
 
-# Test Execution & Bug Reports
+# Execution Results & Bug Reports
 
 ## Execution Summary
 
-Execution was blocked due to authentication issue:
+Execution of selected test scenarios was blocked due to a critical authentication issue.
 
+Attempts to access:
+- /api/matches
+- /api/balance
+
+Resulted in:
 - 401 Unauthorized
-- invalid_user_id
+- error: invalid_user_id
 
 ---
 
-## BUG-01 — Invalid user-id blocks system
+## BUG-01 — Invalid User ID Handling Blocks Application Usage
 
-Severity: Critical
+**Severity:** Critical  
 
-System rejects all user-ids and prevents usage.
+### Reproduction Steps:
+1. Open application with any user-id (e.g., ?user-id=test123)
+2. Open DevTools → Network tab
+3. Observe API calls
+
+### Expected Result:
+- System should accept user-id
+- Matches and balance should load
+
+### Actual Result:
+- API returns 401 Unauthorized
+- Response: invalid_user_id
+- UI shows no matches and €0 balance
+
+### Business Impact:
+- User cannot access the platform
+- Core functionality completely blocked
+
+### Evidence:
+- Network logs showing 401 responses
+- UI screenshot displaying empty state
+
 
 ---
+
+## BUG-02 — Poor Handling of Unauthorized State in UI
+
+**Severity:** High  
+
+### Reproduction Steps:
+1. Access application with invalid user-id
+2. Observe UI state
+
+### Expected Result:
+- Clear error message explaining issue
+- Guidance on how to recover
+
+### Actual Result:
+- UI displays "Unauthorized"
+- No explanation or recovery option
+- Balance incorrectly displayed as €0.00
+
+### Business Impact:
+- Poor user experience
+- User unable to understand or resolve issue
+
+### Evidence:
+- UI screenshot showing unauthorized state
+
 
 ## BUG-02 — Poor unauthorized handling
 
