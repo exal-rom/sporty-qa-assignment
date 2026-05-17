@@ -32,6 +32,7 @@ Resulted in:
 - API returns 401 Unauthorized
 - Response: invalid_user_id
 - UI shows no matches and €0 balance
+- Header X-User-Id is correctly sent but still rejected
 
 ### Business Impact:
 - User cannot access the platform
