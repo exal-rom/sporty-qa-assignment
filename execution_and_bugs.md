@@ -37,9 +37,11 @@ Resulted in:
 - User cannot access the platform
 - Core functionality completely blocked
 
+
 ### Evidence:
-- Network logs showing 401 responses
-- UI screenshot displaying empty state
+- Network requests return 401 Unauthorized despite valid X-User-Id
+
+Captura de pantalla 2026-05-17 225528.png
 
 
 ---
@@ -65,8 +67,11 @@ Resulted in:
 - Poor user experience
 - User unable to understand or resolve issue
 
+
 ### Evidence:
-- UI screenshot showing unauthorized state
+- UI shows unauthorized state with no matches and incorrect balance display
+
+Captura de pantalla 2026-05-17 225528.png
 
 
 ## BUG-02 — Poor unauthorized handling
