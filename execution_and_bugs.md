@@ -42,7 +42,7 @@ Resulted in:
 ### Evidence:
 - Network requests return 401 Unauthorized despite valid X-User-Id
 
-Captura de pantalla 2026-05-17 225528.png
+![401 error](Captura de pantalla 2026-05-17 225528.png)
 
 
 ---
@@ -72,11 +72,6 @@ Captura de pantalla 2026-05-17 225528.png
 ### Evidence:
 - UI shows unauthorized state with no matches and incorrect balance display
 
-Captura de pantalla 2026-05-17 225528.png
+![401 error](Captura de pantalla 2026-05-17 225528.png)
 
 
-## BUG-02 — Poor unauthorized handling
-
-Severity: High
-
-UI shows unclear error and no recovery actions.
