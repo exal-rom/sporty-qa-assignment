@@ -1,18 +1,32 @@
 
-
 # QA Assignment — Single Bet Placement
 
 ## Overview
-This repository contains QA deliverables for a sports betting application.
+This repository contains QA deliverables for a sports betting application, focusing on risk-based testing and defect analysis.
 
 ## Contents
-- Test Plan
-- Execution Results & Bug Reports
-- Automation Strategy
+- Test Plan (`test_plan.md`)
+- Execution Results & Bug Reports (`execution_and_bugs.md`)
+- Automation Strategy and Technical Decisions
 
-## Summary
-Testing was partially blocked due to an authentication issue (`invalid_user_id`),
-which prevented full end-to-end validation.
+## Execution Summary
+Execution was partially blocked due to an authentication issue (`invalid_user_id`) that prevented access to core system functionality.
 
-However, the analysis identified critical system risks and demonstrated
-strong QA investigation and debugging capabilities.
+Despite this, investigation identified:
+- A critical system-level defect affecting user access
+- Gaps between specification and implementation
+- Weak error handling in the UI
+
+## Key Findings
+- The system requires pre-existing user identifiers, which are not documented
+- API consistently returns `401 Unauthorized`
+- Application becomes unusable without valid user context
+
+## Approach
+The testing approach focused on:
+- Risk-based prioritization
+- Financial validation scenarios
+- System behavior under failure conditions
+
+## Notes
+AI tools were used to assist with documentation clarity and structure, without replacing reasoning, decision-making, or hands-on validation.
