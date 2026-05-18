@@ -13,6 +13,10 @@ Resulted in:
 - 401 Unauthorized
 - error: invalid_user_id
 
+
+**Test Environment:**
+- Browser: Google Chrome (latest available version)
+
 ---
 
 ## BUG-01 — Invalid User ID Handling Blocks Application Usage
